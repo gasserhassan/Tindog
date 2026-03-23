@@ -1,0 +1,65 @@
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient{
+  background-color: black;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 175px;
+    width: auto;
+    height: auto;
+}
+
+.testimonial img{
+  width: 160px;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonial{
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .testimonial{
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+
+.gradient2{
+  background-color: black;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+}
+
